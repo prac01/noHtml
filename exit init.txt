@@ -1,0 +1,39 @@
+Is there a command to undo git init?
+
+answer:
+rm -rf .git
+
+---------------
+how to upload using git:
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/prac01/my-app.git
+git push -u origin master
+
+or
+git push -f origin master
+
+---------------
+pag error yung "npx create-react-app":
+
+step 1
+open git bash in admin
+
+step 2 
+type "npm cache verify"
+
+step 3
+type "npm install -g create-react-app"
+
+step 4 
+open git bash[not the admin] on any react folder you want, then type "npx create-react-app my-folder"
+
+------------------
+if git push -u origin master is rejected
+
+git push -f origin master
+
+https://gist.github.com/mingderwang/94205de855af7c60cafa88564ea6abd7#:~:text=5%20Forks%206-,hint%3A%20Updates%20were%20rejected%20because%20the%20remote%20contains%20work%20that,..')%20before%20pushing%20again.
+
